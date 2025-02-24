@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- noindex -->
+    <meta name="robots" content="noindex" />
+
+    <title>CSS-only Tabs</title>
+
+    <!-- Google Fonts -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="tabs">
+      <input
+        class="tabs__input"
+        type="radio"
+        name="tabs__button"
+        id="tabs__button--1"
+        checked
+      />
+      <label class="tabs__button" for="tabs__button--1">タブ１</label>
+      <input
+        class="tabs__input"
+        type="radio"
+        name="tabs__button"
+        id="tabs__button--2"
+      />
+      <label class="tabs__button" for="tabs__button--2">タブ２</label>
+      <input
+        class="tabs__input"
+        type="radio"
+        name="tabs__button"
+        id="tabs__button--3"
+      />
+      <label class="tabs__button" for="tabs__button--3">タブ３</label>
+      <div id="tabs__content--1" class="tabs__content">
+        <p class="tabs__text">タブ１の内容を表示します</p>
+      </div>
+      <div id="tabs__content--2" class="tabs__content">
+        <p class="tabs__text">タブ２の内容を表示します</p>
+      </div>
+      <div id="tabs__content--3" class="tabs__content">
+        <p class="tabs__text">タブ３の内容を表示します</p>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="./js/script.js" defer></script>
+  </body>
+</html>
